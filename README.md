@@ -104,7 +104,7 @@ Git/GitHub – For version control (if used).
 ## Team Contributions
 - Diya Ferose T T:  Backend Development
 - Hannah Deena Tom: Frontend Development
--Joshiya Vijaya Raja: Testing, Deployment, and Documentation
+- Joshiya Vijaya Raja: Testing, Deployment, and Documentation
 
 ---
 Made with ❤️ at TinkerHub
