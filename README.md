@@ -28,7 +28,6 @@ A web application, Clique, that fosters meaningful connections and social intera
 - **SQL (SQLite)** – For database management.
 - **HTML** – For structuring web pages.
 - **CSS** – For styling the web interface.
-- **JavaScript** – For adding interactivity to the frontend (if used).
 - **Flask** – A lightweight web framework for building the backend.
 - **Flask-Session** – Manages user sessions.
 
@@ -59,7 +58,6 @@ Python – For backend development using Flask.
 SQL – For database management (SQLite).
 HTML – For structuring web pages.
 CSS – For styling the web interface.
-JavaScript (if used) – For adding interactivity to the frontend.
 
 Flask – A lightweight web framework for building the backend.
 Flask-Session is used for session management.
@@ -75,7 +73,7 @@ HTML, CSS, JavaScript – For frontend development.
 Bootstrap/Tailwind  – For UI styling.
 Flask-Session – For session management.
 VS Code / PyCharm – For coding 
-Git/GitHub – For version control (if used).
+Git/GitHub – For version control 
 
 # Screenshots (Add at least 3)
 
