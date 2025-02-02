@@ -98,8 +98,8 @@ Git/GitHub – For version control (if used).
 *This screenshot shows the login page*
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://youtu.be/EL-ow1aJXL8?feature=shared
+This video demonstrates how Clique works.
 
 ## Team Contributions
 - Diya Ferose T T:  Backend Development
