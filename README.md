@@ -8,7 +8,7 @@
 ### Team Members
 - Member 1:  Diya Ferose T T- Govt Model Engineering College
 - Member 2: Hnnah Deena Tom - Albertian  Institute of Science and Technology
-- Member 3: V Joshiya - Muthoot Institute of Technology and Science
+- Member 3: Joshiya Vijaya Raja - Muthoot Institute of Technology and Science
 
 
 ### Hosted Project Link
@@ -104,7 +104,7 @@ Git/GitHub – For version control (if used).
 ## Team Contributions
 - Diya Ferose T T:  Backend Development
 - Hannah Deena Tom: Frontend Development
-- V Joshiya: Testing, Deployment, and Documentation
+-Joshiya Vijaya Raja: Testing, Deployment, and Documentation
 
 ---
 Made with ❤️ at TinkerHub
