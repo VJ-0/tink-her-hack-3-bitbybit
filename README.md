@@ -47,14 +47,18 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1]
+![Image](https://github.com/user-attachments/assets/cfb0be58-9505-44ce-86e9-0ab54b943c95)
+*This screenshot shows the home page*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2]
+![Image](https://github.com/user-attachments/assets/594e2c75-5d7d-45de-9271-f6d08625220b)
+*This screenshot shows the welcome page*
+
+![Screenshot3]
+![Image](https://github.com/user-attachments/assets/fe501ff8-f90f-48e0-a2fb-f23ce826b2ba)
+*This screenshot shows the login page*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
