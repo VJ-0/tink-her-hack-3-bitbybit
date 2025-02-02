@@ -1,0 +1,221 @@
+
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    /* Background image setup */
+    background-image: url('../images/friendship-bg.jpg'); /* You'll need to add this image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Background overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(106, 27, 154, 0.4), rgba(243, 229, 245, 0.8));
+    z-index: -1;
+}
+
+/* Container styles */
+.container, .landing-container, .form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Header styles */
+h1 {
+    color: #6a1b9a;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #8e24aa;
+    font-size: 1.8em;
+    margin: 25px 0 15px 0;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    border: 1px solid rgba(106, 27, 154, 0.2);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #6a1b9a;
+    outline: none;
+    background: white;
+}
+
+/* Button styles */
+.submit-btn,
+.action-btn,
+button {
+    padding: 12px 24px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(106, 27, 154, 0.2);
+}
+
+.submit-btn:hover,
+.action-btn:hover,
+button:hover {
+    background-color: #8e24aa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(106, 27, 154, 0.3);
+}
+
+/* Profile specific styles */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.friend-requests {
+    background-color: rgba(250, 245, 252, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    backdrop-filter: blur(5px);
+}
+
+.friend-requests ul {
+    list-style: none;
+}
+
+.friend-requests li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(224, 224, 224, 0.5);
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* Link styles */
+.link-text {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+.logout-btn {
+    display: inline-block;
+    margin-top: 30px;
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Landing page specific */
+.landing-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.landing-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container, .landing-container, .form-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .landing-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+<div class="photo-collage">
+    <!-- Main featured photo -->
+    <div class="photo-frame">
+        <img src="{{ url_for('static', filename='images/main-group.jpg') }}" alt="Group photo" class="collage-main">
+        <div class="timestamp">5438</div>
+        <div class="photo-overlay"></div>
+    </div>
+    
+    <!-- Smaller photos -->
+    <div class="photo-frame">
+        <img src="{{ url_for('static', filename='images/friend1.jpg') }}" alt="Friends" class="collage-image">
+        <div class="timestamp">0914</div>
+    </div>
+    
+    <div class="photo-frame">
+        <img src="{{ url_for('static', filename='images/friend2.jpg') }}" alt="Friends" class="collage-image">
+        <div class="timestamp">0914</div>
+    </div>
+    
+    <div class="photo-frame">
+        <img src="{{ url_for('static', filename='images/friend3.jpg') }}" alt="Friends" class="collage-image">
+        <div class="timestamp">5438</div>
+    </div>
+</div>
