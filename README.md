@@ -6,8 +6,8 @@
 
 
 ### Team Members
-- Member 1:  Diya Ferose T T- Govt Model Engineering College
-- Member 2: Hnnah Deena Tom - Albertian  Institute of Science and Technology
+- Member 1: Diya Ferose T T- Govt Model Engineering College
+- Member 2: Hannah Deena Tom - Albertian  Institute of Science and Technology
 - Member 3: Joshiya Vijaya Raja - Muthoot Institute of Technology and Science
 
 
