@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <h1>Welcome, {{ user.username }}!</h1>
+            <p>{{ user.bio }}</p>
+        </div>
+
+        <!-- Friend Requests Section -->
+        <div class="friend-requests">
+            <h2>Friend Requests</h2>
+            {% if requests %}
+                <ul>
+                    {% for request in requests %}
+                        <li>
+                            <p>Friend request from {{ request.sender.username }}</p>
+                            <a href="{{ url_for('accept_friend_request', sender_id=request.sender_id) }}" class="action-btn">Accept</a>
+                            <a href="{{ url_for('reject_friend_request', sender_id=request.sender_id) }}" class="action-btn">Reject</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No pending friend requests.</p>
+            {% endif %}
+        </div>
+
+        <!-- Send Friend Request Section -->
+        <div class="send-friend-requests">
+            <h2>Send Friend Requests</h2>
+            <form action="/send_friend_request" method="POST">
+                <label for="receiver_username">Friend Username:</label>
+                <input type="text" name="receiver_username" required placeholder="Enter username">
+                <button type="submit" class="submit-btn">Send Request</button>
+            </form>
+        </div>
+
+        <!-- Logout Link -->
+        <div class="logout">
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

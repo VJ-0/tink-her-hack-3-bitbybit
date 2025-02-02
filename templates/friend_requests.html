@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Requests - Clique</title>
+</head>
+<body>
+    <h1>Friend Requests</h1>
+
+    {% if requests %}
+        <ul>
+            {% for request in requests %}
+                <li>
+                    Friend request from {{ request['sender_id'] }} <!-- You can query sender info here -->
+                    <form action="{{ url_for('accept_friend_request', sender_id=request['sender_id']) }}" method="get">
+                        <button type="submit">Accept</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No friend requests.</p>
+    {% endif %}
+
+    <a href="{{ url_for('profile') }}">Back to Profile</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
